@@ -20,6 +20,7 @@ main section .contents {color:#999; font-weight:700;}
 /* 카히스토리 영상 - 탭 제목, 내용 */
 main #video {background:paleturquoise;}
 main #video .tab_title {}
+/* 탭 제목 활성화, js 클래스 호출용 */
 main #video .tab_title a {padding:15px;}
 main #video .tab_title .active {
     border-bottom:3px solid #189bfa;
@@ -53,6 +54,7 @@ main #menu .tab_title a {
     display:inline-block; margin-right:5px;
 }
 main #menu .tab_title a:last-child {margin-right:0;}
+/* 탭 제목 활성화, js 클래스 호출용 */
 main #menu .tab_title .active {
     border:1px solid black;
     border-bottom:1px solid white; border-top:3px solid #189bfa;
@@ -89,13 +91,14 @@ main #menu .tab_contents .tab_c1 .right ul li {
 }
 main #menu .tab_contents .tab_c1 .right ul li:last-child {border:none;}
 main #menu .tab_contents .tab_c1 .right ul li p {
-    margin-right:30px;
+    margin-right:20px;
 }
 main #menu .tab_contents .tab_c1 .right ul li p img {}
 main #menu .tab_contents .tab_c1 .right ul li .contents {text-align:left; color:black;}
-main #menu .tab_contents .tab_c1 .right ul li .contents .num {color:#189bfa; font-weight:700;}
-main #menu .tab_contents .tab_c1 .right ul li .contents .con {line-height:25px;}
-main #menu .tab_contents .tab_c1 .right ul li .contents .con em {font-size:1.2rem; font-weight:700;}
+main #menu .tab_contents .tab_c1 .right ul li .contents p {line-height:25px; letter-spacing:-0.02rem; }
+main #menu .tab_contents .tab_c1 .right ul li .contents .num {color:#189bfa; font-weight:700; }
+main #menu .tab_contents .tab_c1 .right ul li .contents .con {}
+main #menu .tab_contents .tab_c1 .right ul li .contents .con em {font-size:1.1rem; letter-spacing:-0.02rem; font-weight:700;}
 main #menu .tab_contents .tab_c2 {height:400px;} 
 main #menu .tab_contents .tab_c3 {height:400px;} 
 main #menu .tab_contents .tab_c4 {height:400px;} 
